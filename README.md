@@ -13,7 +13,7 @@ TensorFlow 2.0
 
 ## API
 
-`onnx_to_keras(onnx_model, input_names, input_shapes=None, name_policy=None, verbose=True, change_ordering=False) -> {Keras model}`
+`onnx_to_keras(onnx_model, input_names, input_shapes=None, name_policy=None, verbose=True, change_last=False) -> {Keras model}`
 
 `onnx_model`: ONNX model to convert
 
@@ -25,7 +25,7 @@ TensorFlow 2.0
 
 `verbose`: detailed output
 
-`change_ordering:` change ordering to HWC (experimental)
+`change_last:` change ordering to HWC 
 
 
 ## Getting started
@@ -136,3 +136,6 @@ tf.io.write_graph(graph_or_graph_def=frozen_func.graph,
 
 ## License
 This software is covered by MIT License.
+
+## reference
+git@github.com:gmalivenko/onnx2keras.git
